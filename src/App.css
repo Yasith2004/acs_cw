@@ -16,11 +16,14 @@ main {
     justify-content: space-between;
 }
 
+#logo-link {
+    text-decoration: none;
+    color: goldenrod;
+}
+
 .logo-section {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: goldenrod;
     gap: 12px;
 }
 
@@ -32,8 +35,6 @@ main {
 }
 
 #brand-name {
-    text-decoration: none;
-    color: goldenrod;
     font-size: 25px;
     font-weight: bold;
     margin: 0;

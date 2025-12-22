@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <a href='#'>
+        <a href='#' id="logo-link">
           <div className="logo-section">
             <img id="navbar-logo" src={logo} alt="Logo" />
             <p id='brand-name' href='#'>LuxLiving</p>
