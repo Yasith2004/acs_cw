@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Search from './pages/Search.jsx';
-import PropertyCard from './components/PropertyCard.jsx';
+import PropertyPage from './pages/PropertyPage.jsx';
 import Logo from './images/logo.png';
 import './App.css';
 
@@ -22,6 +22,7 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={<Search />} />
+            <Route path="/property/:id" element={<PropertyPage />} />
           </Routes>
           <footer>
             <p>© 2024 LuxLiving. All rights reserved.</p>

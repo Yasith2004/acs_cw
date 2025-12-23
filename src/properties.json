@@ -9,7 +9,17 @@
             "shortDescription":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station.",
 			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-			"picture":"/src/images/prop1/prop1-1.jpg",
+			"picture":["/src/images/prop1/prop1-1.jpg",
+                        "/src/images/prop1/prop1-2.jpg",
+                        "/src/images/prop1/prop1-3.jpg",
+                        "/src/images/prop1/prop1-4.jpg",
+                        "/src/images/prop1/prop1-5.jpg",
+                        "/src/images/prop1/prop1-6.jpg",
+                        "/src/images/prop1/prop1-7.jpg",
+                        "/src/images/prop1/prop1-8.png",
+                        "/src/images/prop1/prop1-floormap.jpg",
+                        "/src/images/prop1/prop1-1.jpg"
+                    ],
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
