@@ -6,12 +6,12 @@ function PropertyCard() {
   return (
     <div className="property-listings">
         {data.properties.map((property) => (
-            <Link to={`/property/${property.id}`} key={property.id}>
+            <Link to={`/property/${property.id}`}>
                 <div className="property-card">
-                <img src={property.picture[0]} alt={property.type} />
-                <p className="price">£{property.price}</p>
-                <p className="location">{property.location}</p>
-                <p className="short-description">{property.shortDescription}</p>
+                  <img src={property.picture[0]} alt={property.type} />
+                  <p className="price">£{property.price}</p>
+                  <p className="location">{property.location}</p>
+                  <p className="short-description">{property.shortDescription}</p>
                 </div>
             </Link>
         ))}

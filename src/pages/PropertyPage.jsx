@@ -10,7 +10,7 @@ function PropertyPage(){
             <div className="main-image">
                 <img src={property.picture[0]} alt={property.type} />
             </div>
-            {/* <Gallery pictures={property.picture} /> */}
+            <Gallery />
         </div>
     )
 }

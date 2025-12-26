@@ -1,17 +1,20 @@
+import { useParams } from "react-router-dom";
 import data from "../properties.json";
-import { Link } from "react-router-dom";
 
-function Gallery(){
-    return(
+function Gallery() {
+  const { id } = useParams();
 
-        <div className="other-images">
-            {data.properties[index].picture.map((img, index) => (
-                <Link to="" key={index}>
-                    <img src={img} alt= {`${index + 1}`} />
-                </Link>
-            ))}
-        </div>
-    )
+  const property = data.properties.find(
+    (p) => p.id === id
+  );
+
+  return (
+    <div className="image-gallery">
+      {property.picture.map((img, index) => (
+        <img key={index} src={img} alt={`Property image ${index + 1}`} />
+      ))}
+    </div>
+  );
 }
 
 export default Gallery;
