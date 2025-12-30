@@ -5,29 +5,26 @@ function PropertyTab({ property }) {
     return (
         <Tabs>
             <TabList>
-                <Tab>Description</Tab>
-                <Tab>Floor Plan</Tab>
-                <Tab>Map</Tab>
+                <Tab className="tab">📝 Description</Tab>
+                <Tab className="tab">🏠 Floor Plan</Tab>
+                <Tab className="tab">🗺️ Map</Tab>
             </TabList>
             <TabPanel>
                 <div className="description-panel">
-                    <h2>Description</h2>
-                    <p>{property.description}</p>
+                    <p className="description">{property.description}</p>
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="floorplan-panel">
-                    <h2>Floor Plan</h2>
-                        <img src={property.floorPlan[0]} alt="floor plan" className="floor-plan" />
+                    <img src={property.floorPlan[0]} alt="floor plan" className="floor-plan" />
                 </div>
             </TabPanel>
             <TabPanel>
                 <div className="map-panel">
-                    <h2>Location</h2>
-                    <p>{property.location}</p>
+                    <h2>📍{property.location}</h2>
                         <iframe
                             title="Property Location"
-                            width="100%"
+                            width="90%"
                             height="400"
                             src={`https://www.google.com/maps?q=${property.lat},${property.lng}&output=embed`}
                             style={{ border: 0 }}

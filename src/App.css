@@ -285,3 +285,50 @@ footer p {
     transform: scale(1.02);
     cursor: pointer;
 }
+
+.tab {
+    width: 120px;
+    height: 40px;
+    color: #1C2E5D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+}
+
+.tab:hover {
+    text-decoration: none;
+    transform: scale(1.02);
+}
+
+.description-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.description {
+    font-size: 18px;
+    color: #1C2E5D;
+}
+
+.floorplan-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.map-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.map-panel h2 {
+    color: #1C2E5D;
+}
