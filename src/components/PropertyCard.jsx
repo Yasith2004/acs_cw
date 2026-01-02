@@ -12,7 +12,8 @@ function PropertyCard() {
                 <img src={property.picture[0]} alt={property.type} />
                 <p className="price">£{property.price}</p>
                 <p className="location">{property.location}</p>
-                <p className="short-description">{property.shortDescription}</p>
+                <p className="short-description">{property.shortDescription}</p><br></br>
+                <i className="date-added">Added on {property.added.year}-{property.added.month}-{property.added.day}</i>
               </div>
             </Link>
         ))}
