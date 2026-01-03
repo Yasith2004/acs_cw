@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import Search from './pages/Search.jsx';
+import Search from './components/Search.jsx';
 import PropertyPage from './pages/PropertyPage.jsx';
 import Favourites from './components/Favourites.jsx';
 import Logo from './images/logo.png';
@@ -20,7 +20,7 @@ function App() {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
-          </header>
+          </header>       
           <Routes>
             <Route path="/" element={<Search />} />
             <Route path="/property/:id" element={<PropertyPage />} />
