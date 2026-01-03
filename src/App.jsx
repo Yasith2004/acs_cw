@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Search from './components/Search.jsx';
 import PropertyPage from './pages/PropertyPage.jsx';
-import Favourites from './components/Favourites.jsx';
+import Favourites from './pages/FavouritePage.jsx';
 import Logo from './images/logo.png';
 import './App.css';
 
