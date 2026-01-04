@@ -13,7 +13,7 @@ function App() {
         <header className="header">
           <Link to="/" id="home-link">
             <div className="logo-section">
-              <img id="navbar-logo" src="/images/logo.png" alt="Logo" />
+              <img id="navbar-logo" src="/acs_cw/images/logo.png" alt="Logo" />
               <p id='brand-name'>LuxLiving</p>
             </div>
           </Link>

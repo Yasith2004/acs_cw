@@ -1,33 +1,28 @@
+import { useState } from "react";
+
 /**
- * Gallery component renders a grid of property images.
- * Clicking on a thumbnail updates the main image displayed on the PropertyPage.
- * 
- * @param {Object} props - The component props.
- * @param {Array} props.pictures - Array of image URLs.
- * @param {Function} props.setMainImage - State setter function for the main image.
- * @param {string} props.mainImage - The currently selected main image URL.
- * @returns {JSX.Element} The rendered image gallery.
+ * Gallery component renders a featured image and a grid of property thumbnails.
  */
-function Gallery({ pictures, setMainImage, mainImage }) {
-  /**
-   * Updates the parent component's main image state.
-   * @param {string} img - The URL of the clicked image.
-   */
-  const viewImage = (img) => {
-    setMainImage(img);
-  };
+function Gallery({ pictures }) {
+  // Internal state to manage the currently displayed featured image
+  const [activeImage, setActiveImage] = useState(pictures[0]);
 
   return (
-    <div className="image-gallery">
-      {pictures.map((img, index) => (
-        <img
-          key={index}
-          src={img}
-          alt={`Property image ${index + 1}`}
-          onClick={() => viewImage(img)}
-          className={img === mainImage ? "selected" : ""}
-        />
-      ))}
+    <div className="gallery-container">
+      <div className="main-image">
+        <img src={activeImage} alt="Featured property view" />
+      </div>
+      <div className="image-gallery">
+        {pictures.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Property view ${index + 1}`}
+            onClick={() => setActiveImage(img)}
+            className={img === activeImage ? "selected" : ""}
+          />
+        ))}
+      </div>
     </div>
   );
 }
