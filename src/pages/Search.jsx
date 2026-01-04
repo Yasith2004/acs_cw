@@ -14,6 +14,12 @@ function Search() {
   const [dateTo, setDateTo] = useState("");
   const [results, setResults] = useState(data.properties);
 
+  /**
+   * Handles the search form submission.
+   * Filters the full property list based on all active criteria.
+   * 
+   * @param {Event} e The form submission event.
+   */
   const handleSearch = (e) => {
     e.preventDefault();
 
@@ -77,6 +83,9 @@ function Search() {
     setResults(filteredProperties);
   };
 
+  /**
+   * Resets all search filters and clarifies the results to show all properties.
+   */
   const handleReset = () => {
     setPostcode("");
     setType("");

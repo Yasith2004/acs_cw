@@ -3,7 +3,9 @@ import data from "../data/properties.json";
 import { useFavourites } from "../context/FavouritesContext";
 
 function PropertyCard({ properties }) {
+  // Use provided properties or fallback to the full list from data
   const list = properties || data.properties;
+  // Access favourites state and toggle function from context
   const { favourites, toggleFavourite } = useFavourites();
 
   return (

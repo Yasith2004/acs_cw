@@ -535,6 +535,8 @@ footer p {
     }
 
     .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
         margin-bottom: 50px;
     }
 
@@ -785,6 +787,12 @@ footer p {
         width: 35px;
         height: 35px;
         font-size: 28px;
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 50px;
     }
 
     .image-gallery img {

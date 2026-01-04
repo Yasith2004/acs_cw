@@ -1,5 +1,12 @@
 import { useFavourites } from '../context/FavouritesContext';
 
+/**
+ * Favourites component provides the sidebar or list view for properties
+ * that the user has saved. It supports drag-and-drop to add new favourites
+ * and provides options to remove individual items or clear the entire list.
+ * 
+ * @returns {JSX.Element} The rendered favourites container.
+ */
 function Favourites() {
     const { favourites, toggleFavourite, clearFavourites } = useFavourites();
     return (
