@@ -8,7 +8,7 @@
             "tenure": "Freehold",
             "shortDescription": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station.",
             "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
-            "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+            "location": "Petts Wood Road, Orpington BR5",
             "picture": [
                 "/src/images/prop1/prop1-1.jpg",
                 "/src/images/prop1/prop1-2.jpg",
@@ -33,25 +33,27 @@
         },
         {
             "id": "prop2",
-            "type": "Flat",
+            "type": "Apartment",
             "bedrooms": 2,
             "price": 399995,
             "tenure": "Freehold",
             "shortDescription": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.",
-            "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+            "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms. This apartment being only five years old, is still under a 10 year building guarantee.",
             "location": "Crofton Road Orpington BR6",
             "lat": 51.3652,
             "lng": 0.0823,
             "picture": [
-                "/src/images/prop2/prop2_exterior_1767535708323.png",
-                "/src/images/prop2/prop2_living_room_1767535751931.png",
-                "/src/images/prop2/prop2_kitchen_1767535770745.png",
-                "/src/images/prop2/prop2_bedroom1_1767535789904.png",
-                "/src/images/prop2/prop2_bedroom2_1767535809589.png",
-                "/src/images/prop2/prop2_bathroom_1767535828822.png"
+                "/src/images/prop2/prop2-1.jpeg",
+                "/src/images/prop2/prop2-2.jpeg",
+                "/src/images/prop2/prop2-3.jpeg",
+                "/src/images/prop2/prop2-4.jpeg",
+                "/src/images/prop2/prop2-5.jpeg",
+                "/src/images/prop2/prop2-6.jpeg",
+                "/src/images/prop2/prop2-7.jpeg",
+                "/src/images/prop2/prop2-8.jpeg"
             ],
             "floorPlan": [
-                "/src/images/prop2/prop2-floormap.png"
+                "/src/images/prop2/prop2-floormap.jpeg"
             ],
             "url": "properties/prop2.html",
             "added": {
@@ -71,7 +73,21 @@
             "location": "Chislehurst Road, Orpington BR6",
             "lat": 51.4035,
             "lng": -0.0236,
-            "picture": "/src/images/prop3/prop3-1.png",
+            "picture": [
+                "/src/images/prop3/prop3-1.jpeg",
+                "/src/images/prop3/prop3-2.jpeg",
+                "/src/images/prop3/prop3-3.jpeg",
+                "/src/images/prop3/prop3-4.jpeg",
+                "/src/images/prop3/prop3-5.jpeg",
+                "/src/images/prop3/prop3-6.jpeg",
+                "/src/images/prop3/prop3-7.jpeg",
+                "/src/images/prop3/prop3-8.jpeg",
+                "/src/images/prop3/prop3-9.jpeg",
+                "/src/images/prop3/prop3-10.jpeg"
+            ],
+            "floorPlan": [
+                "/src/images/prop3/prop3-floormap.jpeg"
+            ],
             "url": "properties/prop3.html",
             "added": {
                 "month": "November",
@@ -90,7 +106,20 @@
             "location": "Leesons Hill, Orpington BR5",
             "lat": 51.3881,
             "lng": 0.0589,
-            "picture": "images/prop4pic1small.jpg",
+            "picture": [
+                "/src/images/prop4/prop4-1.jpeg",
+                "/src/images/prop4/prop4-2.jpeg",
+                "/src/images/prop4/prop4-3.jpeg",
+                "/src/images/prop4/prop4-4.jpeg",
+                "/src/images/prop4/prop4-5.jpeg",
+                "/src/images/prop4/prop4-6.jpeg",
+                "/src/images/prop4/prop4-7.jpeg",
+                "/src/images/prop4/prop4-8.jpeg",
+                "/src/images/prop4/prop4-9.jpeg"
+            ],
+            "floorPlan": [
+                "/src/images/prop4/prop4-floormap.jpeg"
+            ],
             "url": "properties/prop4.html",
             "added": {
                 "month": "August",
@@ -100,7 +129,7 @@
         },
         {
             "id": "prop5",
-            "type": "Flat",
+            "type": "Apartment",
             "bedrooms": 1,
             "price": 275000,
             "tenure": "Leasehold",
@@ -109,7 +138,19 @@
             "location": "High Street, Orpington BR6",
             "lat": 51.3635,
             "lng": 0.0799,
-            "picture": "images/prop5pic1small.jpg",
+            "picture": [
+                "/src/images/prop5/prop5-1.png",
+                "/src/images/prop5/prop5-2.png",
+                "/src/images/prop5/prop5-3.png",
+                "/src/images/prop5/prop5-4.png",
+                "/src/images/prop5/prop5-5.png",
+                "/src/images/prop5/prop5-6.png",
+                "/src/images/prop5/prop5-7.png",
+                "/src/images/prop5/prop5-8.png"
+            ],
+            "floorPlan": [
+                "/src/images/prop5/prop5-floormap.jpeg"
+            ],
             "url": "properties/prop5.html",
             "added": {
                 "month": "July",
@@ -128,7 +169,19 @@
             "location": "Farnborough Common, Orpington BR6",
             "lat": 51.3516,
             "lng": -0.0475,
-            "picture": "images/prop6pic1small.jpg",
+            "picture": [
+                "src/images/prop6/prop6-1.jpeg",
+                "src/images/prop6/prop6-2.jpeg",
+                "src/images/prop6/prop6-3.jpeg",
+                "src/images/prop6/prop6-4.jpeg",
+                "src/images/prop6/prop6-5.jpeg",
+                "src/images/prop6/prop6-6.jpeg",
+                "src/images/prop6/prop6-7.jpeg",
+                "src/images/prop6/prop6-8.jpeg"
+            ],
+            "floorPlan": [
+                "src/images/prop6/prop6-floormap.jpeg"
+            ],
             "url": "properties/prop6.html",
             "added": {
                 "month": "December",
@@ -147,7 +200,23 @@
             "location": "Tubbenden Lane, Orpington BR6",
             "lat": 51.4028,
             "lng": 0.0925,
-            "picture": "images/prop7pic1small.jpg",
+            "picture": [
+                "/src/images/prop7/prop7-1.jpeg",
+                "/src/images/prop7/prop7-2.jpeg",
+                "/src/images/prop7/prop7-3.jpeg",
+                "/src/images/prop7/prop7-4.jpeg",
+                "/src/images/prop7/prop7-5.jpeg",
+                "/src/images/prop7/prop7-6.jpeg",
+                "/src/images/prop7/prop7-7.jpeg",
+                "/src/images/prop7/prop7-8.jpeg",
+                "/src/images/prop7/prop7-9.jpeg",
+                "/src/images/prop7/prop7-10.jpeg", 
+                "/src/images/prop7/prop7-11.jpeg",
+                "/src/images/prop7/prop7-12.jpeg" 
+            ],
+            "floorPlan": [
+                "/src/images/prop7/prop7-floormap.jpeg"
+            ],
             "url": "properties/prop7.html",
             "added": {
                 "month": "October",

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import data from "../properties.json";
+import data from "../data/properties.json";
 import { useFavourites } from "../context/FavouritesContext";
 
 function PropertyCard({ properties }) {

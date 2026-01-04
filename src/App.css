@@ -1,6 +1,4 @@
-/* =========================================
-   1. GLOBAL RESET & BODY
-   ========================================= */
+/*GLOBAL RESET & BODY */
 body {
     background-color: whitesmoke;
     margin: 0;
@@ -42,9 +40,7 @@ ul li:hover {
     transition: 1s;
 }
 
-/* =========================================
-   2. HEADER & NAVIGATION
-   ========================================= */
+/*HEADER & NAVIGATION*/
 .header {
     background-color: #1C2E5D;
     z-index: 1000;
@@ -81,9 +77,7 @@ ul li:hover {
     color: goldenrod;
 }
 
-/* =========================================
-   3. SEARCH PAGE LAYOUT & FORM
-   ========================================= */
+/*SEARCH PAGE LAYOUT & FORM*/
 .search-page-container {
     display: flex;
     max-width: 1400px;
@@ -200,9 +194,7 @@ select:focus {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* =========================================
-   4. PROPERTY LISTINGS & CARDS
-   ========================================= */
+/*PROPERTY LISTINGS & CARDS */
 .property-listings {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -305,9 +297,7 @@ select:focus {
     cursor: pointer;
 }
 
-/* =========================================
-   5. FAVOURITES SIDEBAR
-   ========================================= */
+/*FAVOURITES SIDEBAR*/
 .favourites-sidebar {
     flex: 1;
     margin-top: 100px;
@@ -343,9 +333,7 @@ select:focus {
     margin-top: 20px;
 }
 
-/* =========================================
-   6. PROPERTY DETAILS PAGE
-   ========================================= */
+/*PROPERTY DETAILS PAGE*/
 .property-page-container {
     display: flex;
     flex-direction: column;
@@ -468,9 +456,7 @@ select:focus {
     color: #1C2E5D;
 }
 
-/* =========================================
-   7. FOOTER
-   ========================================= */
+/*FOOTER*/
 footer {
     display: block;
     text-align: center;
@@ -484,9 +470,7 @@ footer p {
     font-weight: bold;
 }
 
-/* =========================================
-   8. MEDIA QUERIES
-   ========================================= */
+/*MEDIA QUERIES */
 
 /* Tablet (768px - 1024px) */
 @media (max-width: 1024px) {

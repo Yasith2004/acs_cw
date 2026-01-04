@@ -18,8 +18,8 @@ function App() {
             </div>
           </Link>
           <ul>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/">About Us</Link></li>
+            <li><Link to="/">Contact</Link></li>
           </ul>
         </header>
         <Routes>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import PropertyCard from "../components/PropertyCard";
-import data from "../properties.json";
-import { useFavourites } from "../context/FavouritesContext";
+import data from "../data/properties.json";
 import Favourites from "../components/Favourites";
 
 function Search() {
@@ -102,7 +101,7 @@ function Search() {
                 <label htmlFor="type">Property Type</label>
                 <select id="type" name="type" value={type} onChange={(e) => setType(e.target.value)}>
                   <option value="">Any</option>
-                  <option value="Flat">Flat</option>
+                  <option value="Apartment">Apartment</option>
                   <option value="House">House</option>
                   <option value="Bungalow">Bungalow</option>
                   <option value="Maisonette">Maisonette</option>
