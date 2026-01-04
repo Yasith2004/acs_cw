@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Search from './pages/Search.jsx';
 import PropertyPage from './pages/PropertyPage.jsx';
-import Logo from './images/logo.png';
+// Image will be loaded from public/images/logo.png
 import { FavouritesProvider } from './context/FavouritesContext.jsx';
 import './App.css';
 
@@ -13,7 +13,7 @@ function App() {
         <header className="header">
           <Link to="/" id="home-link">
             <div className="logo-section">
-              <img id="navbar-logo" src={Logo} alt="Logo" />
+              <img id="navbar-logo" src="/images/logo.png" alt="Logo" />
               <p id='brand-name'>LuxLiving</p>
             </div>
           </Link>
