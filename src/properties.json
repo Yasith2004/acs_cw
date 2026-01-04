@@ -50,6 +50,9 @@
                 "/src/images/prop2/prop2_bedroom2_1767535809589.png",
                 "/src/images/prop2/prop2_bathroom_1767535828822.png"
             ],
+            "floorPlan": [
+                "/src/images/prop2/prop2-floormap.png"
+            ],
             "url": "properties/prop2.html",
             "added": {
                 "month": "September",
@@ -68,7 +71,7 @@
             "location": "Chislehurst Road, Orpington BR6",
             "lat": 51.4035,
             "lng": -0.0236,
-            "picture": "images/prop3pic1small.jpg",
+            "picture": "/src/images/prop3/prop3-1.png",
             "url": "properties/prop3.html",
             "added": {
                 "month": "November",

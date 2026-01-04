@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropertyCard from "../components/PropertyCard";
 import data from "../properties.json";
 import { useFavourites } from "../context/FavouritesContext";
-import Favourites from "./Favourites";
+import Favourites from "../components/Favourites";
 
 function Search() {
   const [postcode, setPostcode] = useState("");
@@ -14,8 +14,6 @@ function Search() {
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
   const [results, setResults] = useState(data.properties);
-
-  const { favourites, toggleFavourite, clearFavourites } = useFavourites();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -61,8 +59,6 @@ function Search() {
           monthMap[property.added.month],
           property.added.day
         );
-        // Reset time to midnight for accurate date comparison
-        propDate.setHours(0, 0, 0, 0);
 
         if (dateFrom) {
           const from = new Date(dateFrom);

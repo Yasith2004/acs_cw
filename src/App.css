@@ -220,11 +220,13 @@ select:focus {
 
 .property-card {
     background-color: white;
-    height: 520px;
-    width: 360px;
+    min-height: 520px;
+    width: 100%;
+    max-width: 360px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    box-sizing: border-box;
 }
 
 .property-card:hover {
@@ -314,13 +316,16 @@ select:focus {
 .favourites-container {
     background-color: white;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 0;
+    margin-right: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 350px;
-    height: 520px;
+    height: 500px;
     position: fixed;
-    top: 50px;
+    top: 100px;
+    right: 20px;
+    overflow-y: auto;
 }
 
 .favourites-container h3 {
@@ -329,7 +334,8 @@ select:focus {
 }
 
 .favourite-placeholder {
-    padding: 20px;
+    padding-top: 175px;
+    padding-bottom: 175px;
     text-align: center;
     color: darkgrey;
     border: 2px dashed #eee;
@@ -346,7 +352,7 @@ select:focus {
     width: 95%;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 150px;
     padding: 20px;
     gap: 20px;
 }
@@ -356,6 +362,8 @@ select:focus {
 }
 
 .back-btn {
+    position: fixed;
+    z-index: 999;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -369,8 +377,8 @@ select:focus {
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    margin-bottom: 20px;
     align-self: flex-start;
+    top: 95px;
     margin-left: 0;
 }
 
@@ -479,14 +487,332 @@ footer p {
 /* =========================================
    8. MEDIA QUERIES
    ========================================= */
-@media (max-width: 768px) {
-    .property-page-container {
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .search-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property-listings {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 10px;
+        margin: 30px auto 100px auto;
+    }
+
+    .property-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .property-card img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .price {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .location,
+    .short-description {
+        font-size: 16px;
+    }
+
+    .search-page-container {
         flex-direction: column;
     }
 
     .favourites-sidebar {
-        margin-top: 20px;
         width: 100%;
-        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .favourites-container {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        max-height: none;
+    }
+
+    .property-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .main-image img {
+        height: 400px;
+    }
+
+    .image-gallery {
+        margin-bottom: 50px;
+    }
+
+    .image-gallery img {
+        width: 80px;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .floorplan-panel img {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 60px;
+    }
+
+    .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .header img {
+        height: 40px;
+        padding-left: 0;
+    }
+
+    #brand-name {
+        font-size: 16px;
+    }
+
+    ul {
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    ul li {
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* Search Form */
+    .search-container {
+        width: 80%;
+        margin: 130px auto;
+        padding: 15px;
+    }
+
+    .search-container h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .search-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-actions {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .search-btn,
+    .clear-btn {
+        width: 30%;
+    }
+
+    /* Property Listings */
+    .property-listings {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto 100px auto;
+    }
+
+    .property-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .property-card img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .price {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .location,
+    .short-description {
+        font-size: 16px;
+    }
+
+    /* Property Page */
+    .property-page-container {
+        width: 100%;
+        margin-top: 80px;
+        padding: 10px;
+    }
+
+    .back-btn {
+        position: fixed;
+        top: 120px;
+        left: 10px;
+        right: auto;
+        width: auto;
+        padding: 8px 12px;
+        font-size: 14px;
+        z-index: 998;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .image-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-gallery img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .property-tab {
+        margin: auto;
+    }
+
+    .tab {
+        width: 100%;
+        font-size: 14px;
+        
+    }
+
+    .description-panel {
+        padding: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .floorplan-panel {
+        width: 100%;
+    }
+
+    /* Favourites Sidebar - Show Below Cards */
+    .favourites-sidebar {
+        align-self: center;
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .favourites-container {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: none;
+        padding: 20px 15px;
+    }
+
+    .search-page-container {
+        flex-direction: column;
+    }
+
+    /* No Results */
+    .no-results {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .no-results h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        width: 100%;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    footer p {
+        padding-top: 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 480px) {
+    .search-container h1 {
+        font-size: 20px;
+    }
+
+    .property-card {
+        padding: 10px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .location,
+    .short-description {
+        font-size: 14px;
+    }
+
+    #favourite-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 28px;
+    }
+
+    .image-gallery img {
+        width: 70px;
+        height: 48px;
+    }
+
+    .floorplan-panel {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
     }
 }

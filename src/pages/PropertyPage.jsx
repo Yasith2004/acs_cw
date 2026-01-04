@@ -19,7 +19,7 @@ function PropertyPage() {
                     </div>
                     <Gallery pictures={property.picture} setMainImage={setMainImage} mainImage={mainImage} />
                 </div>
-                <div>
+                <div className="property-tab">
                     <PropertyTab property={property} />
                 </div>
             </div>
