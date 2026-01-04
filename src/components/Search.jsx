@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropertyCard from "../components/PropertyCard";
 import data from "../properties.json";
-
+import { useFavourites } from "../context/FavouritesContext";
 import Favourites from "./Favourites";
 
 function Search() {
@@ -15,19 +15,7 @@ function Search() {
   const [dateTo, setDateTo] = useState("");
   const [results, setResults] = useState(data.properties);
 
-  const [favourites, setFavourites] = useState([]);
-
-  const toggleFavourite = (property) => {
-    if (favourites.some(fav => fav.id === property.id)) {
-      setFavourites(favourites.filter(fav => fav.id !== property.id));
-    } else {
-      setFavourites([...favourites, property]);
-    }
-  };
-
-  const clearFavourites = () => {
-    setFavourites([]);
-  };
+  const { favourites, toggleFavourite, clearFavourites } = useFavourites();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -174,7 +162,7 @@ function Search() {
           </form>
         </div>
         {results.length > 0 ? (
-          <PropertyCard properties={results} favourites={favourites} onToggleFavourite={toggleFavourite} />
+          <PropertyCard properties={results} />
         ) : (
           <div className="no-results">
             <h3>No properties found matching your criteria.</h3>
@@ -183,7 +171,7 @@ function Search() {
         )}
       </div>
       <aside className="favourites-sidebar">
-        <Favourites favourites={favourites} onRemove={toggleFavourite} onClear={clearFavourites} />
+        <Favourites />
       </aside>
     </div>
   )

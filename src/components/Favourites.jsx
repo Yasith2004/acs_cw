@@ -1,6 +1,20 @@
-function Favourites({ favourites, onRemove, onClear }) {
+import { useFavourites } from '../context/FavouritesContext';
+
+function Favourites() {
+    const { favourites, toggleFavourite, clearFavourites } = useFavourites();
     return (
-        <div className="favourites-container">
+        <div
+            className="favourites-container"
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => {
+                e.preventDefault();
+                const data = e.dataTransfer.getData("application/json");
+                if (data) {
+                    const property = JSON.parse(data);
+                    toggleFavourite(property);
+                }
+            }}
+        >
             <h1 style={{ textAlign: 'center', fontWeight: 'bold', color: '#1C2E5D', paddingBottom: '20px', margin: '0' }}>Favourites</h1>
             {favourites && favourites.length > 0 ? (
                 <div className="favourites-list">
@@ -25,7 +39,7 @@ function Favourites({ favourites, onRemove, onClear }) {
                                 <div style={{ fontSize: '12px', color: '#E1507A', fontWeight: 'bold' }}>£{fav.price}</div>
                             </div>
                             <button
-                                onClick={() => onRemove(fav)}
+                                onClick={() => toggleFavourite(fav)}
                                 style={{
                                     background: 'none',
                                     border: 'none',
@@ -41,7 +55,7 @@ function Favourites({ favourites, onRemove, onClear }) {
                         </div>
                     ))}
                     <button
-                        onClick={onClear}
+                        onClick={clearFavourites}
                         className="clear-fav-btn"
                         style={{
                             width: '100%',
@@ -60,7 +74,7 @@ function Favourites({ favourites, onRemove, onClear }) {
                 </div>
             ) : (
                 <div className="favourite-placeholder">
-                    <p>No favourites yet.</p>
+                    <p>Drag and drop properties here to save them.</p>
                 </div>
             )}
         </div>

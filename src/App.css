@@ -245,6 +245,7 @@ select:focus {
 .property-card i {
     color: darkgrey;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .short-description {
