@@ -80,7 +80,7 @@ ul li:hover {
 /*SEARCH PAGE LAYOUT & FORM*/
 .search-page-container {
     display: flex;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
 }
@@ -386,9 +386,16 @@ select:focus {
     height: 500px;
 }
 
+.main-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .main-image img {
     border-radius: 15px;
     height: 500px;
+    object-fit: contain;
 }
 
 .image-gallery {
@@ -398,6 +405,7 @@ select:focus {
 }
 
 .image-gallery img {
+    align-content: center;
     width: 100px;
     height: 65px;
     margin: 5px;

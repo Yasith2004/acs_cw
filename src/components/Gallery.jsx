@@ -2,6 +2,11 @@ import { useState } from "react";
 
 /**
  * Gallery component renders a featured image and a grid of property thumbnails.
+ * It manages its own internal state to track the currently active featured image.
+ * 
+ * @param {Object} props - The component props.
+ * @param {Array} props.pictures - Array of image URLs.
+ * @returns {JSX.Element} The rendered image gallery.
  */
 function Gallery({ pictures }) {
   // Internal state to manage the currently displayed featured image
