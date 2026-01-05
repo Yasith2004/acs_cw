@@ -311,7 +311,7 @@ select:focus {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 350px;
-    height: 500px;
+    height: 450px;
     position: fixed;
     top: 100px;
     right: 20px;
@@ -324,8 +324,8 @@ select:focus {
 }
 
 .favourite-placeholder {
-    padding-top: 175px;
-    padding-bottom: 175px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     text-align: center;
     color: darkgrey;
     border: 2px dashed #eee;
