@@ -6,7 +6,7 @@ import PropertyTab from '../components/PropertyTab';
 import Search from '../pages/Search';
 
 // Mock the properties data for Search filtering tests
-jest.mock('./data/properties.json', () => ({
+jest.mock('../data/properties.json', () => ({
     properties: [
         {
             id: 'prop1',
